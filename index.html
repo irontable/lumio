@@ -6,8 +6,11 @@
   <title>Lumio — Artisan Home Fragrance</title>
   <meta name="description" content="Handmade soy candles, reed diffusers and room sprays. Made slowly. Made to last.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <!-- Social media link (Instagram) — satisfies LO2 -->
-  <link rel="canonical" href="https://gabriel-lumio.github.io/lumio/">
+  <link rel="canonical" href="https://irontable.github.io/lumio/">
 </head>
 <body>
 
@@ -44,32 +47,47 @@
   <section class="hero" aria-label="Hero banner">
     <div class="hero__content">
       <span class="hero__label">New Collection — SS26</span>
-      <h1 class="hero__title">Handmade.<br>Unhurried.<br>Lumio.</h1>
+      <h1 class="hero__title">Handmade.<br><em>Unhurried.</em><br>Lumio.</h1>
       <p class="hero__sub">
         Artisan soy candles, reed diffusers and room sprays. 
         Crafted in small batches from 100% natural ingredients.
       </p>
       <a href="shop.html" class="hero__cta">Shop the Collection</a>
     </div>
-    <div class="hero__image" aria-hidden="true">
-      <!-- Placeholder SVG — replace with real product photo -->
-      <div class="hero__image-placeholder">
-        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="40" cy="28" r="14" fill="#C07B4F" opacity="0.6"/>
-          <rect x="28" y="42" width="24" height="32" rx="2" fill="#C07B4F" opacity="0.8"/>
-          <path d="M20 74 Q40 68 60 74" stroke="#C07B4F" stroke-width="1.5" fill="none" opacity="0.4"/>
-          <line x1="40" y1="8" x2="40" y2="14" stroke="#C07B4F" stroke-width="2"/>
-        </svg>
-        <span style="color:var(--terracotta);font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;">Amber &amp; Cedar<br>Soy Candle</span>
-        <span style="color:var(--grey);font-size:0.78rem;">[Add hero photo here]</span>
-      </div>
+    <div class="hero__image">
+      <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=1200&q=85&fm=jpg"
+           alt="Warm Lumio candles arranged on cream linen"
+           loading="eager">
     </div>
   </section>
+
+  <!-- Stats Bar -->
+  <div class="container">
+    <div class="stats fade-up">
+      <div class="stat">
+        <div class="stat__number">100%</div>
+        <div class="stat__label">Natural Soy Wax</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">45h</div>
+        <div class="stat__label">Average Burn Time</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">6</div>
+        <div class="stat__label">Signature Scents</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number">0</div>
+        <div class="stat__label">Synthetic Ingredients</div>
+      </div>
+    </div>
+  </div>
 
   <!-- Featured Products -->
   <section class="section" aria-labelledby="featured-heading">
     <div class="container">
       <div class="section__header fade-up">
+        <div class="ornament"><span>✦</span></div>
         <span class="section__label">Our Products</span>
         <h2 id="featured-heading">Carefully Crafted</h2>
         <p style="color:var(--grey);max-width:480px;margin:0 auto;">
@@ -80,12 +98,8 @@
 
         <article class="product-card fade-up">
           <div class="product-card__image">
-            <div style="width:100%;height:100%;background:var(--linen);display:flex;align-items:center;justify-content:center;">
-              <svg width="60" height="80" viewBox="0 0 60 80" fill="none">
-                <circle cx="30" cy="14" r="8" fill="#C07B4F" opacity="0.5"/>
-                <rect x="18" y="22" width="24" height="46" rx="2" fill="#C07B4F" opacity="0.7"/>
-              </svg>
-            </div>
+            <img src="https://images.unsplash.com/photo-1603905462734-7ba47e768f84?w=800&q=85&fm=jpg"
+                 alt="Amber and Cedar Soy Candle by Lumio" loading="lazy">
           </div>
           <div class="product-card__body">
             <h3 class="product-card__name">Amber &amp; Cedar Soy Candle</h3>
@@ -99,13 +113,8 @@
 
         <article class="product-card fade-up" style="transition-delay:0.12s">
           <div class="product-card__image">
-            <div style="width:100%;height:100%;background:var(--linen);display:flex;align-items:center;justify-content:center;">
-              <svg width="40" height="90" viewBox="0 0 40 90" fill="none">
-                <rect x="16" y="0" width="8" height="40" rx="2" fill="#C07B4F" opacity="0.5"/>
-                <ellipse cx="20" cy="40" rx="16" ry="6" fill="#C07B4F" opacity="0.3"/>
-                <rect x="4" y="46" width="32" height="40" rx="3" fill="#C07B4F" opacity="0.7"/>
-              </svg>
-            </div>
+            <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=800&q=85&fm=jpg"
+                 alt="Fig and Linen Reed Diffuser by Lumio" loading="lazy">
           </div>
           <div class="product-card__body">
             <h3 class="product-card__name">Fig &amp; Linen Reed Diffuser</h3>
@@ -119,13 +128,8 @@
 
         <article class="product-card fade-up" style="transition-delay:0.24s">
           <div class="product-card__image">
-            <div style="width:100%;height:100%;background:var(--linen);display:flex;align-items:center;justify-content:center;">
-              <svg width="50" height="80" viewBox="0 0 50 80" fill="none">
-                <rect x="10" y="20" width="30" height="48" rx="4" fill="#C07B4F" opacity="0.6"/>
-                <ellipse cx="25" cy="20" rx="12" ry="4" fill="#C07B4F" opacity="0.4"/>
-                <rect x="20" y="4" width="10" height="16" rx="3" fill="#C07B4F" opacity="0.5"/>
-              </svg>
-            </div>
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800&q=85&fm=jpg"
+                 alt="Sandalwood Room Spray by Lumio" loading="lazy">
           </div>
           <div class="product-card__body">
             <h3 class="product-card__name">Sandalwood Room Spray</h3>
@@ -147,17 +151,11 @@
   <!-- Brand Story -->
   <section class="section section--grey" aria-labelledby="story-heading">
     <div class="container">
+      <div class="ornament"><span>✦</span></div>
       <div class="story fade-up">
-        <div class="story__image" aria-hidden="true">
-          <div style="width:100%;height:100%;background:var(--linen);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--terracotta);">
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-              <rect x="16" y="20" width="48" height="48" rx="4" fill="none" stroke="#C07B4F" stroke-width="2"/>
-              <circle cx="40" cy="14" r="10" fill="#C07B4F" opacity="0.4"/>
-              <line x1="40" y1="4" x2="40" y2="10" stroke="#C07B4F" stroke-width="2"/>
-              <rect x="28" y="40" width="24" height="28" fill="#C07B4F" opacity="0.6"/>
-            </svg>
-            <span style="font-size:0.8rem;color:var(--grey);">[Brand story photo]</span>
-          </div>
+        <div class="story__image">
+          <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=1000&q=85&fm=jpg"
+               alt="Artisan candle pouring in the Lumio studio" loading="lazy">
         </div>
         <div class="story__content">
           <span class="story__label">Our Story</span>
@@ -208,15 +206,15 @@
   <section class="section" aria-labelledby="journal-heading">
     <div class="container">
       <div class="section__header fade-up">
+        <div class="ornament"><span>✦</span></div>
         <span class="section__label">The Lumio Journal</span>
         <h2 id="journal-heading">Stories &amp; Guides</h2>
       </div>
       <div class="blog__grid">
         <article class="blog-card fade-up">
           <div class="blog-card__image">
-            <div style="width:100%;height:100%;background:var(--linen);display:flex;align-items:center;justify-content:center;">
-              <span style="color:var(--grey);font-size:0.8rem;">[Blog image 1]</span>
-            </div>
+            <img src="https://images.unsplash.com/photo-1607006344380-b6775a0824a7?w=900&q=85&fm=jpg"
+                 alt="Soy wax candle burning on a wood surface" loading="lazy">
           </div>
           <div class="blog-card__body">
             <span class="blog-card__date">12 March 2026</span>
@@ -227,9 +225,8 @@
         </article>
         <article class="blog-card fade-up" style="transition-delay:0.1s">
           <div class="blog-card__image">
-            <div style="width:100%;height:100%;background:var(--linen);display:flex;align-items:center;justify-content:center;">
-              <span style="color:var(--grey);font-size:0.8rem;">[Blog image 2]</span>
-            </div>
+            <img src="https://images.unsplash.com/photo-1571781418606-70265b9cce90?w=900&q=85&fm=jpg"
+                 alt="Candle and fragrance collection by mood" loading="lazy">
           </div>
           <div class="blog-card__body">
             <span class="blog-card__date">4 March 2026</span>
