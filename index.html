@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumio — Artisan Home Fragrance</title>
+  <meta name="description" content="Handmade soy candles, reed diffusers and room sprays. Made slowly. Made to last.">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Social media link (Instagram) — satisfies LO2 -->
+  <link rel="canonical" href="https://gabriel-lumio.github.io/lumio/">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement">
+    Free UK shipping on orders over £45 &nbsp;·&nbsp;
+    Follow us on <a href="https://instagram.com" target="_blank" rel="noopener" style="color:var(--linen);text-decoration:underline;">Instagram</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Lumio home">Lumio</a>
+      <ul class="nav__links" role="list">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <!-- Instagram social link — LO2 requirement -->
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Lumio on Instagram">Instagram ↗</a>
+        </li>
+      </ul>
+      <button class="nav__cart" aria-label="Open shopping bag">
+        Bag <span class="cart-count" style="display:none;background:var(--cream);color:var(--brown);border-radius:50%;width:18px;height:18px;font-size:0.7rem;align-items:center;justify-content:center;margin-left:6px;"></span>
+      </button>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-label="Hero banner">
+    <div class="hero__content">
+      <span class="hero__label">New Collection — SS26</span>
+      <h1 class="hero__title">Handmade.<br>Unhurried.<br>Lumio.</h1>
+      <p class="hero__sub">
+        Artisan soy candles, reed diffusers and room sprays. 
+        Crafted in small batches from 100% natural ingredients.
+      </p>
+      <a href="shop.html" class="hero__cta">Shop the Collection</a>
+    </div>
+    <div class="hero__image" aria-hidden="true">
+      <!-- Placeholder SVG — replace with real product photo -->
+      <div class="hero__image-placeholder">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="28" r="14" fill="#C07B4F" opacity="0.6"/>
+          <rect x="28" y="42" width="24" height="32" rx="2" fill="#C07B4F" opacity="0.8"/>
+          <path d="M20 74 Q40 68 60 74" stroke="#C07B4F" stroke-width="1.5" fill="none" opacity="0.4"/>
+          <line x1="40" y1="8" x2="40" y2="14" stroke="#C07B4F" stroke-width="2"/>
+        </svg>
+        <span style="color:var(--terracotta);font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;">Amber &amp; Cedar<br>Soy Candle</span>
+        <span style="color:var(--grey);font-size:0.78rem;">[Add hero photo here]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section" aria-labelledby="featured-heading">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__label">Our Products</span>
+        <h2 id="featured-heading">Carefully Crafted</h2>
+        <p style="color:var(--grey);max-width:480px;margin:0 auto;">
+          Every Lumio product is hand-poured in small batches using 100% natural soy wax and essential oils.
+        </p>
+      </div>
+      <div class="products__grid">
+
+        <article class="product-card fade-up">
+          <div class="product-card__image">
+            <div style="width:100%;height:100%;background:var(--linen);display:flex;align-items:center;justify-content:center;">
+              <svg width="60" height="80" viewBox="0 0 60 80" fill="none">
+                <circle cx="30" cy="14" r="8" fill="#C07B4F" opacity="0.5"/>
+                <rect x="18" y="22" width="24" height="46" rx="2" fill="#C07B4F" opacity="0.7"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Amber &amp; Cedar Soy Candle</h3>
+            <p class="product-card__desc">Warm, woody and grounding. Burns for up to 45 hours.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">£28.00</span>
+              <button class="product-card__btn" data-add-cart data-name="Amber &amp; Cedar Candle" data-price="28.00" aria-label="Add Amber &amp; Cedar Soy Candle to bag">Add to Bag</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card fade-up" style="transition-delay:0.12s">
+          <div class="product-card__image">
+            <div style="width:100%;height:100%;background:var(--linen);display:flex;align-items:center;justify-content:center;">
+              <svg width="40" height="90" viewBox="0 0 40 90" fill="none">
+                <rect x="16" y="0" width="8" height="40" rx="2" fill="#C07B4F" opacity="0.5"/>
+                <ellipse cx="20" cy="40" rx="16" ry="6" fill="#C07B4F" opacity="0.3"/>
+                <rect x="4" y="46" width="32" height="40" rx="3" fill="#C07B4F" opacity="0.7"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Fig &amp; Linen Reed Diffuser</h3>
+            <p class="product-card__desc">A clean, fresh scent for living rooms and hallways. 8–10 weeks.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">£34.00</span>
+              <button class="product-card__btn" data-add-cart data-name="Fig &amp; Linen Reed Diffuser" data-price="34.00" aria-label="Add Fig &amp; Linen Reed Diffuser to bag">Add to Bag</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card fade-up" style="transition-delay:0.24s">
+          <div class="product-card__image">
+            <div style="width:100%;height:100%;background:var(--linen);display:flex;align-items:center;justify-content:center;">
+              <svg width="50" height="80" viewBox="0 0 50 80" fill="none">
+                <rect x="10" y="20" width="30" height="48" rx="4" fill="#C07B4F" opacity="0.6"/>
+                <ellipse cx="25" cy="20" rx="12" ry="4" fill="#C07B4F" opacity="0.4"/>
+                <rect x="20" y="4" width="10" height="16" rx="3" fill="#C07B4F" opacity="0.5"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Sandalwood Room Spray</h3>
+            <p class="product-card__desc">100ml. Natural alcohol base. 200+ sprays per bottle.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">£18.00</span>
+              <button class="product-card__btn" data-add-cart data-name="Sandalwood Room Spray" data-price="18.00" aria-label="Add Sandalwood Room Spray to bag">Add to Bag</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div style="text-align:center;margin-top:48px;" class="fade-up">
+        <a href="shop.html" class="hero__cta" style="display:inline-block;">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Story -->
+  <section class="section section--grey" aria-labelledby="story-heading">
+    <div class="container">
+      <div class="story fade-up">
+        <div class="story__image" aria-hidden="true">
+          <div style="width:100%;height:100%;background:var(--linen);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--terracotta);">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <rect x="16" y="20" width="48" height="48" rx="4" fill="none" stroke="#C07B4F" stroke-width="2"/>
+              <circle cx="40" cy="14" r="10" fill="#C07B4F" opacity="0.4"/>
+              <line x1="40" y1="4" x2="40" y2="10" stroke="#C07B4F" stroke-width="2"/>
+              <rect x="28" y="40" width="24" height="28" fill="#C07B4F" opacity="0.6"/>
+            </svg>
+            <span style="font-size:0.8rem;color:var(--grey);">[Brand story photo]</span>
+          </div>
+        </div>
+        <div class="story__content">
+          <span class="story__label">Our Story</span>
+          <h2 id="story-heading">Made Slowly.<br>Made to Last.</h2>
+          <p class="story__text">
+            Lumio began in a small London kitchen with a single question: 
+            why does sustainable home fragrance have to look and feel so boring?
+          </p>
+          <p class="story__text">
+            Every candle we make uses 100% natural soy wax sourced from renewable UK farms, 
+            cotton wicks, and fragrance oils that are free from phthalates and parabens. 
+            We produce in small batches — never more than we need — so nothing goes to waste.
+          </p>
+          <p class="story__text">
+            We believe your home should smell beautiful without costing the planet anything.
+          </p>
+          <a href="about.html" class="story__link">Read our full story →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section--dark" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__label">What Our Customers Say</span>
+        <h2 id="testimonials-heading" style="color:var(--cream);">Made With Care, Received With Love</h2>
+      </div>
+      <div class="testimonials__grid">
+        <blockquote class="testimonial fade-up">
+          <p class="testimonial__quote">"The Amber &amp; Cedar candle is the best I've ever burned. The scent is complex but never overwhelming, and it lasts for days."</p>
+          <cite class="testimonial__author">— Priya M., London</cite>
+        </blockquote>
+        <blockquote class="testimonial fade-up" style="transition-delay:0.1s">
+          <p class="testimonial__quote">"I ordered three diffusers for my flat and they transformed every room. The packaging alone is beautiful enough to give as a gift."</p>
+          <cite class="testimonial__author">— James K., Edinburgh</cite>
+        </blockquote>
+        <blockquote class="testimonial fade-up" style="transition-delay:0.2s">
+          <p class="testimonial__quote">"Finally a sustainable fragrance brand that doesn't compromise on aesthetics. Lumio is everything I wanted it to be."</p>
+          <cite class="testimonial__author">— Sara T., Manchester</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journal Preview -->
+  <section class="section" aria-labelledby="journal-heading">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__label">The Lumio Journal</span>
+        <h2 id="journal-heading">Stories &amp; Guides</h2>
+      </div>
+      <div class="blog__grid">
+        <article class="blog-card fade-up">
+          <div class="blog-card__image">
+            <div style="width:100%;height:100%;background:var(--linen);display:flex;align-items:center;justify-content:center;">
+              <span style="color:var(--grey);font-size:0.8rem;">[Blog image 1]</span>
+            </div>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__date">12 March 2026</span>
+            <h3 class="blog-card__title">Why We Use Soy Wax</h3>
+            <p class="blog-card__excerpt">Paraffin wax is a by-product of petroleum. Soy wax is renewable, biodegradable, and burns cleaner. Here's why the difference matters...</p>
+            <a href="blog.html" style="font-size:0.82rem;color:var(--terracotta);letter-spacing:0.08em;text-transform:uppercase;border-bottom:1px solid var(--terracotta);padding-bottom:2px;display:inline-block;margin-top:14px;">Read More</a>
+          </div>
+        </article>
+        <article class="blog-card fade-up" style="transition-delay:0.1s">
+          <div class="blog-card__image">
+            <div style="width:100%;height:100%;background:var(--linen);display:flex;align-items:center;justify-content:center;">
+              <span style="color:var(--grey);font-size:0.8rem;">[Blog image 2]</span>
+            </div>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__date">4 March 2026</span>
+            <h3 class="blog-card__title">Choosing a Scent by Mood</h3>
+            <p class="blog-card__excerpt">The right fragrance can shift the atmosphere of an entire room. This guide matches our scents to the moods and moments they suit best...</p>
+            <a href="blog.html" style="font-size:0.82rem;color:var(--terracotta);letter-spacing:0.08em;text-transform:uppercase;border-bottom:1px solid var(--terracotta);padding-bottom:2px;display:inline-block;margin-top:14px;">Read More</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <h2 id="newsletter-heading">Join the Lumio Community</h2>
+      <p>Be the first to hear about new collections, journal posts, and offers.</p>
+      <form class="newsletter__form" novalidate aria-label="Newsletter signup">
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input id="newsletter-email" type="email" class="newsletter__input" placeholder="Your email address" required autocomplete="email">
+        <button type="submit" class="newsletter__btn">Subscribe</button>
+      </form>
+      <!-- Social media integration — links to/from social (LO2) -->
+      <p style="margin-top:24px;font-size:0.82rem;color:var(--grey);">
+        Follow us: 
+        <a href="https://instagram.com" target="_blank" rel="noopener">@lumio.store</a> &nbsp;·&nbsp;
+        <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a> &nbsp;·&nbsp;
+        <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo">Lumio</div>
+          <p class="footer__tagline">Artisan home fragrance made slowly, sustainably, and with care. London, UK.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">Candles</a></li>
+            <li><a href="shop.html">Diffusers</a></li>
+            <li><a href="shop.html">Room Sprays</a></li>
+            <li><a href="shop.html">Gift Sets</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="blog.html">Journal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Shipping &amp; Returns</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Lumio. All rights reserved. Made for DIM22104 — Ravensbourne University London.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart toast notification -->
+  <div class="cart-toast" role="status" aria-live="polite"></div>
+
+  <!-- Screen reader only utility -->
+  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}</style>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

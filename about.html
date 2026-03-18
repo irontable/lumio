@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Lumio Artisan Home Fragrance</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .about-hero{background:var(--brown);color:var(--cream);padding:80px 0;text-align:center;}
+    .about-hero h1{color:var(--cream);margin-bottom:16px;}
+    .about-hero p{color:var(--linen);max-width:520px;margin:0 auto;font-size:1.05rem;}
+    .values{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;}
+    .value-card{background:var(--white);padding:40px 32px;text-align:center;}
+    .value-card__icon{font-size:2rem;margin-bottom:16px;}
+    .value-card h3{font-family:var(--font-heading);margin-bottom:10px;}
+    .value-card p{color:var(--grey);font-size:0.9rem;}
+    .about-content{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
+    .about-img{background:var(--linen);aspect-ratio:1;display:flex;align-items:center;justify-content:center;color:var(--grey);font-size:0.8rem;}
+    @media(max-width:768px){.values{grid-template-columns:1fr;}.about-content{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+  <div class="announcement">Free UK shipping on orders over £45 &nbsp;·&nbsp; <a href="https://instagram.com" target="_blank" rel="noopener" style="color:var(--linen);text-decoration:underline;">Instagram ↗</a></div>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Lumio</a>
+      <ul class="nav__links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="blog.html">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a></li>
+      </ul>
+      <button class="nav__cart">Bag <span class="cart-count" style="display:none;background:var(--cream);color:var(--brown);border-radius:50%;width:18px;height:18px;font-size:0.7rem;align-items:center;justify-content:center;margin-left:6px;"></span></button>
+      <button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="about-hero">
+    <div class="container">
+      <span style="font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--linen);display:block;margin-bottom:16px;">Our Story</span>
+      <h1>Made Slowly.<br>Made to Last.</h1>
+      <p>Lumio began with a single question: why does sustainable home fragrance have to feel so ordinary?</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-content fade-up">
+        <div>
+          <span style="font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--terracotta);display:block;margin-bottom:20px;">Who We Are</span>
+          <h2>A Small Studio in London</h2>
+          <p>Lumio was founded in 2025 in a small kitchen in East London. We started by making candles for friends, and the response told us something: people were hungry for home fragrance that was both beautiful and honest about what it was made from.</p>
+          <p>Every product we make uses 100% natural soy wax sourced from renewable UK farms, cotton wicks, and fragrance oils certified free from phthalates, parabens, and synthetic musks. We produce in small batches — never more than we need — so nothing goes to waste.</p>
+          <p>We believe your home should smell like something that means something.</p>
+        </div>
+        <div class="about-img">[Founder photo or studio image]</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--grey">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__label">What We Stand For</span>
+        <h2>Our Values</h2>
+      </div>
+      <div class="values">
+        <div class="value-card fade-up">
+          <div class="value-card__icon">🌿</div>
+          <h3>Natural Ingredients</h3>
+          <p>100% soy wax, cotton wicks, and essential oil blends. No paraffin. No synthetics. No compromise.</p>
+        </div>
+        <div class="value-card fade-up" style="transition-delay:0.1s">
+          <div class="value-card__icon">🏺</div>
+          <h3>Small Batch Craft</h3>
+          <p>Every product is hand-poured in our London studio. We make what we need, when we need it — nothing more.</p>
+        </div>
+        <div class="value-card fade-up" style="transition-delay:0.2s">
+          <div class="value-card__icon">♻️</div>
+          <h3>Sustainable Packaging</h3>
+          <p>All packaging is made from recycled or recyclable materials. Our glass vessels are designed to be repurposed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container" style="text-align:center;max-width:640px;">
+      <div class="fade-up">
+        <span style="font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--linen);display:block;margin-bottom:20px;">Our Promise</span>
+        <h2 style="color:var(--cream);margin-bottom:24px;">"We don't make products.<br>We make decisions."</h2>
+        <p style="color:var(--linen);font-size:1rem;line-height:1.8;margin-bottom:32px;">Every ingredient we choose, every supplier we work with, every piece of packaging we design — it all reflects a choice about the kind of company we want to be. We think those choices matter.</p>
+        <a href="shop.html" class="hero__cta" style="display:inline-block;">Shop the Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div><div class="footer__logo">Lumio</div><p class="footer__tagline">Artisan home fragrance. London, UK.</p>
+          <div class="footer__social"><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></div></div>
+        <div class="footer__col"><h4>Shop</h4><ul><li><a href="shop.html">Candles</a></li><li><a href="shop.html">Diffusers</a></li><li><a href="shop.html">Room Sprays</a></li></ul></div>
+        <div class="footer__col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Journal</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer__col"><h4>Help</h4><ul><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">FAQs</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><p>© 2026 Lumio. DIM22104 — Ravensbourne University London.</p></div>
+    </div>
+  </footer>
+  <div class="cart-toast" role="status" aria-live="polite"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

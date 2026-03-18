@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal — Lumio Artisan Home Fragrance</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .blog-hero{background:var(--linen);padding:64px 0;text-align:center;}
+    .blog-hero h1{margin-bottom:12px;}
+    .blog-hero p{color:var(--grey);max-width:440px;margin:0 auto;}
+    .blog-full{max-width:680px;margin:0 auto;}
+    .blog-article{margin-bottom:64px;padding-bottom:64px;border-bottom:1px solid var(--linen);}
+    .blog-article:last-child{border-bottom:none;}
+    .blog-article__image{background:var(--linen);height:320px;display:flex;align-items:center;justify-content:center;margin-bottom:28px;color:var(--grey);font-size:0.8rem;}
+    .blog-article__meta{display:flex;gap:16px;align-items:center;margin-bottom:14px;}
+    .blog-article__date{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--terracotta);}
+    .blog-article__tag{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--grey);background:var(--linen);padding:3px 10px;}
+    .blog-article h2{font-family:var(--font-heading);font-size:1.6rem;margin-bottom:16px;color:var(--brown);}
+    .blog-article p{color:var(--grey);line-height:1.8;margin-bottom:14px;}
+    .read-more{font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--terracotta);border-bottom:1px solid var(--terracotta);padding-bottom:2px;display:inline-block;margin-top:8px;}
+    .blog-sidebar{position:sticky;top:88px;align-self:flex-start;}
+    .blog-layout{display:grid;grid-template-columns:1fr 300px;gap:64px;align-items:start;}
+    .sidebar-widget{background:var(--light-grey);padding:28px;margin-bottom:28px;}
+    .sidebar-widget h4{font-family:var(--font-heading);margin-bottom:16px;font-size:1rem;}
+    .sidebar-widget ul{list-style:none;}
+    .sidebar-widget li{padding:8px 0;border-bottom:1px solid var(--linen);font-size:0.88rem;}
+    .sidebar-widget li:last-child{border-bottom:none;}
+    .sidebar-widget a{color:var(--brown);}
+    .sidebar-widget a:hover{color:var(--terracotta);opacity:1;}
+    @media(max-width:860px){.blog-layout{grid-template-columns:1fr;}.blog-sidebar{position:static;}}
+  </style>
+</head>
+<body>
+
+  <div class="announcement">Free UK shipping on orders over £45 &nbsp;·&nbsp; <a href="https://instagram.com" target="_blank" rel="noopener" style="color:var(--linen);text-decoration:underline;">Instagram ↗</a></div>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Lumio</a>
+      <ul class="nav__links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html" aria-current="page">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a></li>
+      </ul>
+      <button class="nav__cart">Bag <span class="cart-count" style="display:none;background:var(--cream);color:var(--brown);border-radius:50%;width:18px;height:18px;font-size:0.7rem;align-items:center;justify-content:center;margin-left:6px;"></span></button>
+      <button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="blog-hero">
+    <div class="container">
+      <span style="font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--terracotta);display:block;margin-bottom:12px;">Stories &amp; Guides</span>
+      <h1>The Lumio Journal</h1>
+      <p>Thoughts on craft, sustainability, and making your home smell like somewhere you want to be.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="blog-layout">
+
+        <!-- Main articles -->
+        <div>
+          <article class="blog-article fade-up">
+            <div class="blog-article__image">[Post image — soy wax pouring process]</div>
+            <div class="blog-article__meta">
+              <span class="blog-article__date">12 March 2026</span>
+              <span class="blog-article__tag">Sustainability</span>
+            </div>
+            <h2>Why We Use Soy Wax (And Why It Matters)</h2>
+            <p>Paraffin wax — the material used in most commercial candles — is a by-product of petroleum refining. It burns with a slight black soot, releases trace volatile organic compounds into your home, and comes from a non-renewable source. We find that a difficult trade-off to make, which is why every Lumio candle uses 100% natural soy wax.</p>
+            <p>Soy wax is made from soybeans — a renewable, biodegradable crop. It burns cleaner than paraffin, produces no soot, and releases less carbon dioxide as it burns. It also holds fragrance better, which means our scents stay truer across the full burn life of the candle. The decision is both ethical and practical.</p>
+            <p>Our soy wax is sourced from UK-certified suppliers who farm without genetically modified crops. We use the same supply chain for every batch, which means consistency in quality and complete traceability from farm to finished product.</p>
+            <a href="#" class="read-more">Continue Reading →</a>
+          </article>
+
+          <article class="blog-article fade-up">
+            <div class="blog-article__image">[Post image — scent collection flatlay]</div>
+            <div class="blog-article__meta">
+              <span class="blog-article__date">4 March 2026</span>
+              <span class="blog-article__tag">Guide</span>
+            </div>
+            <h2>How to Choose a Scent by Mood</h2>
+            <p>Fragrance is one of the most direct routes to a particular state of mind. The right scent in the right space can shift the atmosphere of an entire room — not through novelty, but through the way smell connects to memory and emotion faster than almost any other sense.</p>
+            <p>We've spent a lot of time thinking about which of our scents suit which moods and moments, and we've put that thinking into this guide.</p>
+            <p><strong style="color:var(--brown);">For focus and work:</strong> Eucalyptus &amp; Mint. The cool, clean top notes create a sense of mental clarity without being energising to the point of distraction.</p>
+            <p><strong style="color:var(--brown);">For winding down:</strong> Amber &amp; Cedar. Warm, deep, and slightly sweet — the woody base notes signal that the working day is over.</p>
+            <p><strong style="color:var(--brown);">For welcoming guests:</strong> Fig &amp; Linen Reed Diffuser. Subtle enough to not overwhelm a room, distinctive enough to be noticed and remembered.</p>
+            <a href="#" class="read-more">Continue Reading →</a>
+          </article>
+
+          <article class="blog-article fade-up">
+            <div class="blog-article__image">[Post image — packaging close-up]</div>
+            <div class="blog-article__meta">
+              <span class="blog-article__date">22 February 2026</span>
+              <span class="blog-article__tag">Behind the Brand</span>
+            </div>
+            <h2>Introducing Lumio: Why We Started</h2>
+            <p>Lumio started in a kitchen in East London with a batch of 12 candles and a question we couldn't stop asking: why does sustainable home fragrance always look so worthy and feel so dull?</p>
+            <p>The market had two options. On one side, beautiful candles from heritage brands — but made from paraffin, sold in disposable packaging, designed for aesthetic rather than substance. On the other, genuinely sustainable alternatives that communicated their ethics so loudly they forgot to be desirable.</p>
+            <p>We wanted to make something that was both. Properly sustainable — natural ingredients, recyclable packaging, honest supply chains — and genuinely beautiful. Not apologetically functional. Not aspirationally decorative. Both, at once, without compromise.</p>
+            <p>Those first 12 candles went to friends. They came back with empty vessels and asked for more. That felt like the answer to the question we'd been asking.</p>
+            <a href="#" class="read-more">Continue Reading →</a>
+          </article>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+          <div class="sidebar-widget fade-up">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="#">Sustainability (3)</a></li>
+              <li><a href="#">Guides (2)</a></li>
+              <li><a href="#">Behind the Brand (1)</a></li>
+              <li><a href="#">Recipes &amp; DIY (0)</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-widget fade-up">
+            <h4>Follow Along</h4>
+            <p style="font-size:0.85rem;color:var(--grey);margin-bottom:16px;">See our process on Instagram — new posts every week.</p>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="hero__cta" style="display:block;text-align:center;font-size:0.78rem;">@lumio.store ↗</a>
+          </div>
+          <div class="sidebar-widget fade-up">
+            <h4>New to Lumio?</h4>
+            <p style="font-size:0.85rem;color:var(--grey);margin-bottom:16px;">Start with our bestselling Amber &amp; Cedar Soy Candle.</p>
+            <a href="shop.html" class="hero__cta" style="display:block;text-align:center;font-size:0.78rem;">Shop Now</a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div><div class="footer__logo">Lumio</div><p class="footer__tagline">Artisan home fragrance. London, UK.</p>
+          <div class="footer__social"><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></div></div>
+        <div class="footer__col"><h4>Shop</h4><ul><li><a href="shop.html">All Products</a></li><li><a href="shop.html">Candles</a></li><li><a href="shop.html">Diffusers</a></li></ul></div>
+        <div class="footer__col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Journal</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer__col"><h4>Help</h4><ul><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">FAQs</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><p>© 2026 Lumio. DIM22104 — Ravensbourne University London.</p></div>
+    </div>
+  </footer>
+  <div class="cart-toast" role="status" aria-live="polite"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
