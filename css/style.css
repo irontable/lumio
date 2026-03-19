@@ -206,6 +206,13 @@ strong { font-weight: 500; color: var(--brown); }
   transition: transform 0.7s cubic-bezier(0.4,0,0.2,1);
 }
 .product-card:hover .product-card__image img { transform: scale(1.07); }
+.product-card__image img.secondary {
+  position: absolute; inset: 0;
+  opacity: 0; transition: opacity var(--transition), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+.product-card:hover .product-card__image img.secondary {
+  opacity: 1; transform: scale(1.07);
+}
 /* Hover overlay */
 .product-card__image::after {
   content: 'Quick View';
