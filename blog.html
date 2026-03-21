@@ -31,6 +31,7 @@
     .sidebar-widget li:last-child{border-bottom:none;}
     .sidebar-widget a{color:var(--brown);}
     .sidebar-widget a:hover{color:var(--terracotta);opacity:1;}
+    .blog-article h3{font-family:var(--font-heading);font-size:1.2rem;margin:24px 0 12px;color:var(--brown);}
     @media(max-width:860px){.blog-layout{grid-template-columns:1fr;}.blog-sidebar{position:static;}}
   </style>
 </head>
@@ -67,6 +68,58 @@
 
         <!-- Main articles -->
         <div>
+          <article class="blog-article fade-up">
+            <div class="blog-article__meta">
+              <span class="blog-article__date">21 March 2026</span>
+              <span class="blog-article__tag">Portfolio Reflection</span>
+            </div>
+            <h2>Design & Development Reflective Portfolio</h2>
+            <div class="reflection-content">
+              <h3>1. Introduction</h3>
+              <p>This portfolio reflects on the design and development of Lumio — an artisan home fragrance e-commerce website built as the primary deliverable for DIM22104. The project asked me to create a functional website for a fictional client, incorporating design principles, basic coding, e-commerce thinking and blog content within a single coherent digital product.</p>
+              <p>I chose to build a brand called Lumio — a small-batch, sustainably minded candle and home fragrance business based in East London. The decision to create a fictional brand from scratch rather than adapt an existing brief gave me full creative and structural ownership of the project, which I felt would produce a more coherent outcome. The site covers five pages: a homepage, a shop, an about page, a journal (blog), and a contact page — all linked through a consistent navigation and visual identity.</p>
+              <p>The reflection that follows analyses the decisions I made across the full development process — from initial visual planning through to the specific HTML and CSS techniques used to produce each page. It also addresses the challenges I encountered and what I learned from working through them. The project is live and accessible at https://irontable.github.io/lumio/ and was built using HTML, CSS, and JavaScript, hosted via GitHub Pages.</p>
+
+              <h3>2. Website Design Process</h3>
+              <h4>2.1 Visual Identity and Brand Direction</h4>
+              <p>The starting point for Lumio was a clear brand position: premium but not inaccessible, sustainable but not preachy, minimal but not cold. That combination shaped every visual decision I made. I chose an off-white and warm cream background palette with dark charcoal text, accented only by the deep navy used on headings. This restrained colour system communicates the brand values — natural, quiet, considered — without needing to say them explicitly.</p>
+              <p>Typography was equally deliberate. I selected a serif display typeface for headlines to convey craft and heritage, paired with a clean sans-serif for body text and navigation. The contrast between the two creates a visual rhythm across each page — formal structure from the headings, readability and clarity from the body text. I also used italic styling selectively in the hero headline ('Handmade. Unhurried. Lumio.') to draw attention to the brand's core tone of voice.</p>
+
+              <h4>2.2 Layout and UX Decisions</h4>
+              <p>The site's layout follows a top-down hierarchy on every page: a persistent header with navigation, a full-width hero or page header, content organised into clearly separated sections, and a footer with navigation repeated for accessibility. This structure is consistent across all five pages, which reduces cognitive load for the user — they always know where they are and how to move around.</p>
+              <p>On the homepage, I used a three-column product grid to introduce the collection immediately after the hero. This was a deliberate UX decision: users who arrive from a social media link or an ad are often ready to browse products straight away, and burying the shop behind another click would create unnecessary friction. The homepage also includes a customer testimonials section and a blog teaser, both of which serve to build trust and communicate brand depth before the user commits to a purchase.</p>
+              <p>For mobile responsiveness, I used CSS media queries at 768px and 480px breakpoints to reflow the grid layout from three columns to two, then one. Navigation collapses on smaller screens to maintain usability without cluttering the header. These decisions were guided by the principle that a large proportion of e-commerce traffic comes from mobile devices, and a layout that breaks on a phone effectively disqualifies the site from that audience.</p>
+
+              <h3>3. E-commerce Implementation</h3>
+              <h4>3.1 Shop Structure and Product Presentation</h4>
+              <p>The shop page (shop.html) presents six products across three categories — candles, diffusers, and room sprays — using a filterable grid layout. Each product card includes a product image, name, brief descriptor, price, and an 'Add to Bag' button. The filtering system allows users to view all products or narrow to a single category without leaving the page, which reduces the number of page loads and creates a more fluid shopping experience.</p>
+              <p>The 'Add to Bag' functionality is handled in JavaScript. When a user clicks the button, the item is added to a basket object held in memory, and the bag counter in the navigation header updates to reflect the current total. I chose not to implement a full checkout flow — which would require server-side processing and a payment gateway beyond the scope of this project — but the interaction is realistic enough to demonstrate the principle of client-side cart management.</p>
+
+              <h4>3.2 Challenges Encountered</h4>
+              <p>The main challenge in the e-commerce section was making the product filter work smoothly without a JavaScript library. I initially attempted to use CSS classes alone to show and hide category groups, but found that the transition between states was abrupt and visually jarring. I resolved this by adding a brief CSS opacity transition triggered by a class toggle in JavaScript, which gave the appearance of the grid fading between states rather than snapping. This was a small technical problem, but working through it taught me how CSS and JavaScript interact to produce UI behaviour that neither could achieve alone.</p>
+
+              <h3>4. Blog Integration</h3>
+              <h4>4.1 Purpose of the Journal</h4>
+              <p>The blog — named 'The Lumio Journal' — was built as an integral part of the website rather than an add-on. I took the decision early in the project that a home fragrance brand lives or dies by its ability to communicate values, and that a journal section was the most natural vehicle for that communication. The three posts I wrote cover sustainability (the case for soy wax over paraffin), product guidance (choosing a scent by mood), and brand storytelling (the origin of Lumio).</p>
+              <p>Each post is approximately 200 to 300 words and is written in the brand voice: informed, honest, and not overly promotional. The journal page (blog.html) presents posts in reverse chronological order with a featured image, date, category tag, and a preview of the opening paragraph. A sidebar provides category navigation, a social media prompt, and a product recommendation — all of which serve to keep the user engaged with the wider site rather than reading in isolation.</p>
+
+              <h4>4.2 Effectiveness as a Communication Tool</h4>
+              <p>The blog serves two functions simultaneously: brand communication and potential SEO value. In a real deployment, content that addresses specific user queries — 'why soy wax?', 'which candle scent is right for me?' — would draw organic search traffic and introduce the brand to users who were not yet aware of it. Even within the simulated context of this project, the journal gives the site a sense of depth and legitimacy that a product-only site would lack.</p>
+
+              <h3>5. Use of Coding Languages</h3>
+              <h4>5.1 HTML — Structure and Semantics</h4>
+              <p>The entire site is built on HTML5, using semantic elements throughout rather than generic div containers wherever possible. The navigation is wrapped in a <nav> element, blog posts are marked up with <article> tags, and section landmarks are used to divide each page into logical regions. This approach matters for accessibility — screen readers and assistive technologies depend on semantic markup to convey page structure to users who cannot see the visual layout — and it also reflects good professional practice.</p>
+              <p>Each page is a standalone .html file linked through consistent relative paths. I used a shared navigation structure across all five pages, which required rewriting it on each file — something that in a CMS-based or framework-based environment would be handled automatically through templates or components. Working without that infrastructure made me more aware of the repetition that comes with static HTML and why tools like Jekyll, Next.js, or WordPress exist to solve it.</p>
+
+              <h4>5.2 CSS — Styling and Responsive Design</h4>
+              <p>The visual styling of the site is entirely CSS, with no external UI framework such as Bootstrap or Tailwind. I made this decision deliberately, because using a framework would have reduced the amount of CSS I actually wrote and understood. The stylesheet uses CSS custom properties (variables) defined at the :root level to maintain colour and typography consistency across all pages. If I needed to change the brand's primary colour, I could do it in one place and it would update everywhere.</p>
+              <p>The grid layouts on the shop and homepage use CSS Grid, which I found more intuitive for two-dimensional layouts than Flexbox. However, I used Flexbox for one-dimensional alignment tasks — centering items within a navigation bar, aligning text alongside icons, and managing the product card's internal layout. Understanding when to use each layout system was one of the more practically useful things I worked through during this project.</p>
+
+              <h4>5.3 JavaScript — Interactivity</h4>
+              <p>JavaScript is used in two places on the site: the shopping bag counter and the product filter on the shop page. Both are written in vanilla JavaScript without any external libraries. The bag counter uses an array to store added items, calculates the total on each addition, and updates the DOM to reflect the new count. The product filter uses data attributes on each product card to match against the selected category and toggles a hidden class accordingly. These are modest uses of JavaScript, but they gave me a working understanding of DOM manipulation, event listeners, and the relationship between JavaScript logic and the HTML elements it controls.</p>
+            </div>
+            <a href="#" class="read-more">Back to All Stories →</a>
+          </article>
           <article class="blog-article fade-up">
             <div class="blog-article__image" style="overflow:hidden;">
               <img src="https://images.unsplash.com/photo-1602873145311-482d547573d4?w=900&q=85&fm=jpg"
