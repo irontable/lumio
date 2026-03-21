@@ -69,6 +69,9 @@
         <!-- Main articles -->
         <div>
           <article class="blog-article fade-up">
+            <div class="blog-article__image" style="overflow:hidden; height: 500px;">
+              <img src="images/blog-portfolio-hero.png" alt="Artisan candles in a villa courtyard — Lumio portfolio hero" style="width:100%;height:100%;object-fit:cover;">
+            </div>
             <div class="blog-article__meta">
               <span class="blog-article__date">21 March 2026</span>
               <span class="blog-article__tag">Portfolio Reflection</span>
@@ -81,6 +84,9 @@
               <p>The reflection that follows analyses the decisions I made across the full development process — from initial visual planning through to the specific HTML and CSS techniques used to produce each page. It also addresses the challenges I encountered and what I learned from working through them. The project is live and accessible at https://irontable.github.io/lumio/ and was built using HTML, CSS, and JavaScript, hosted via GitHub Pages.</p>
 
               <h3>2. Website Design Process</h3>
+              <div class="blog-article__image" style="overflow:hidden; height: 400px; margin: 24px 0;">
+                <img src="images/blog-design-process.png" alt="Website Creation Process for Lumio — Infographic" style="width:100%;height:100%;object-fit:contain; background: #fff;">
+              </div>
               <h4>2.1 Visual Identity and Brand Direction</h4>
               <p>The starting point for Lumio was a clear brand position: premium but not inaccessible, sustainable but not preachy, minimal but not cold. That combination shaped every visual decision I made. I chose an off-white and warm cream background palette with dark charcoal text, accented only by the deep navy used on headings. This restrained colour system communicates the brand values — natural, quiet, considered — without needing to say them explicitly.</p>
               <p>Typography was equally deliberate. I selected a serif display typeface for headlines to convey craft and heritage, paired with a clean sans-serif for body text and navigation. The contrast between the two creates a visual rhythm across each page — formal structure from the headings, readability and clarity from the body text. I also used italic styling selectively in the hero headline ('Handmade. Unhurried. Lumio.') to draw attention to the brand's core tone of voice.</p>
@@ -91,7 +97,6 @@
               <p>For mobile responsiveness, I used CSS media queries at 768px and 480px breakpoints to reflow the grid layout from three columns to two, then one. Navigation collapses on smaller screens to maintain usability without cluttering the header. These decisions were guided by the principle that a large proportion of e-commerce traffic comes from mobile devices, and a layout that breaks on a phone effectively disqualifies the site from that audience.</p>
 
               <h3>3. E-commerce Implementation</h3>
-              <h4>3.1 Shop Structure and Product Presentation</h4>
               <p>The shop page (shop.html) presents six products across three categories — candles, diffusers, and room sprays — using a filterable grid layout. Each product card includes a product image, name, brief descriptor, price, and an 'Add to Bag' button. The filtering system allows users to view all products or narrow to a single category without leaving the page, which reduces the number of page loads and creates a more fluid shopping experience.</p>
               <p>The 'Add to Bag' functionality is handled in JavaScript. When a user clicks the button, the item is added to a basket object held in memory, and the bag counter in the navigation header updates to reflect the current total. I chose not to implement a full checkout flow — which would require server-side processing and a payment gateway beyond the scope of this project — but the interaction is realistic enough to demonstrate the principle of client-side cart management.</p>
 
@@ -99,6 +104,9 @@
               <p>The main challenge in the e-commerce section was making the product filter work smoothly without a JavaScript library. I initially attempted to use CSS classes alone to show and hide category groups, but found that the transition between states was abrupt and visually jarring. I resolved this by adding a brief CSS opacity transition triggered by a class toggle in JavaScript, which gave the appearance of the grid fading between states rather than snapping. This was a small technical problem, but working through it taught me how CSS and JavaScript interact to produce UI behaviour that neither could achieve alone.</p>
 
               <h3>4. Blog Integration</h3>
+              <div class="blog-article__image" style="overflow:hidden; height: 500px; margin: 24px 0;">
+                <img src="images/blog-spa-bathtub.png" alt="Luxury spa candles by a Victorian bathtub — Lumio brand vibe" style="width:100%;height:100%;object-fit:cover;">
+              </div>
               <h4>4.1 Purpose of the Journal</h4>
               <p>The blog — named 'The Lumio Journal' — was built as an integral part of the website rather than an add-on. I took the decision early in the project that a home fragrance brand lives or dies by its ability to communicate values, and that a journal section was the most natural vehicle for that communication. The three posts I wrote cover sustainability (the case for soy wax over paraffin), product guidance (choosing a scent by mood), and brand storytelling (the origin of Lumio).</p>
               <p>Each post is approximately 200 to 300 words and is written in the brand voice: informed, honest, and not overly promotional. The journal page (blog.html) presents posts in reverse chronological order with a featured image, date, category tag, and a preview of the opening paragraph. A sidebar provides category navigation, a social media prompt, and a product recommendation — all of which serve to keep the user engaged with the wider site rather than reading in isolation.</p>
@@ -120,10 +128,11 @@
             </div>
             <a href="#" class="read-more">Back to All Stories →</a>
           </article>
+
           <article class="blog-article fade-up">
             <div class="blog-article__image" style="overflow:hidden;">
-              <img src="https://images.unsplash.com/photo-1602873145311-482d547573d4?w=900&q=85&fm=jpg"
-                   alt="Warm artisan candle glow — Lumio journal" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+              <img src="images/blog-soy-wax.png"
+                   alt="Natural soy wax flakes and handmade candle — Lumio journal" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
             </div>
             <div class="blog-article__meta">
               <span class="blog-article__date">12 March 2026</span>
@@ -138,8 +147,8 @@
 
           <article class="blog-article fade-up">
             <div class="blog-article__image" style="overflow:hidden;">
-              <img src="https://images.unsplash.com/photo-1602873145311-482d547573d4?w=900&q=85&fm=jpg"
-                   alt="Artisan candle collection by mood" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+              <img src="images/blog-mood-collection.png"
+                   alt="Artisan candle collection by mood — Lumio journal" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
             </div>
             <div class="blog-article__meta">
               <span class="blog-article__date">4 March 2026</span>
@@ -156,8 +165,8 @@
 
           <article class="blog-article fade-up">
             <div class="blog-article__image" style="overflow:hidden;">
-              <img src="https://images.unsplash.com/photo-1605651332150-f2c90637b587?w=900&q=85&fm=jpg"
-                   alt="Lumio brand story — artisan home fragrance" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+              <img src="images/blog-origin-story.png"
+                   alt="Lumio brand story — artisanal kitchen workshop" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
             </div>
             <div class="blog-article__meta">
               <span class="blog-article__date">22 February 2026</span>
